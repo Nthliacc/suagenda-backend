@@ -13,9 +13,6 @@
     "back",
     "front"
   ],
-  "engines": {
-    "node": "12.x"
-  },
   "author": "Nathalia-Costa",
   "license": "ISC",
   "dependencies": {
