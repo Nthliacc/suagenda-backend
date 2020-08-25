@@ -6,9 +6,7 @@
   "scripts": {
     "start": "ts-node-dev ./src/index.ts",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sls:start": "sls offline",
-    "sls:deploy": "sle deploy"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "fullstack",
@@ -31,8 +29,10 @@
     "knex": "^0.21.5",
     "moment": "^2.27.0",
     "mysql": "^2.18.1",
-    "ts-node-dev": "^1.0.0-pre.59",
     "typescript": "^4.0.2",
     "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.60"
   }
 }
