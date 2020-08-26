@@ -13,7 +13,7 @@ export class ClientController {
             const input: ClientInputDTO = {
                 name: req.body.name,
                 emails: req.body.emails,
-                telefones: req.body.telefones,
+                phones: req.body.phones,
                 role: req.body.role
             }
 
@@ -22,7 +22,7 @@ export class ClientController {
 
             const create_at = moment().format("YYYY-MM-DD");
 
-            await new ClientDatabase().createClient(id, input.name, input.emails, input.telefones, create_at, input.role);
+            await new ClientDatabase().createClient(id, input.name, input.emails, input.phones, create_at, input.role);
 
             res.status(200).send( `${input.name} seu cadastro foi realizado coom sucesso!` );
 
@@ -69,7 +69,7 @@ export class ClientController {
                 contact_id: contact.contact_id,
                 name: contact.name,
                 emails: contact.emails,
-                telefones: contact.telefones
+                phones: contact.phones
             }));
 
             res.status(200).send( listContacts );

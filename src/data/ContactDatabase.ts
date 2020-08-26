@@ -8,7 +8,7 @@ export class ContactDatabase extends BaseDatabase{
         contact_id: string,
         name: string,
         emails: string,
-        telefones: string,
+        phones: string,
         role: string,
         client_id: string
     ): Promise<void>{
@@ -18,7 +18,7 @@ export class ContactDatabase extends BaseDatabase{
                     contact_id, 
                     name, 
                     emails, 
-                    telefones, 
+                    phones, 
                     role,
                     client_id
                 })

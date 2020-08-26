@@ -3,7 +3,7 @@ export class Contact{
         protected contact_id: string,
         protected name: string,
         protected emails: string,
-        protected telefones: string,
+        protected phones: string,
         protected role: string = "CONTACT",
         protected client_id: string 
     ){}
@@ -12,14 +12,14 @@ export class Contact{
     getClientId = () => this.client_id;
     getName = () => this.name;
     getEmails = () => this.emails;
-    getTelefones = () => this.telefones;
+    getPhones = () => this.phones;
     getRole = () => this.role;
 
     setId = (id: string) => this.contact_id = id;
     setClientId = (client_id: string) => this.client_id = client_id;
     setName = (name: string) => this.name = name;
     setEmails = (emails: string) => this.emails = emails;
-    setTelefones= (telefones: string) => this.telefones = telefones;
+    setPhones= (phones: string) => this.phones = phones;
     setRole = (role: string) => this.role = role;
 
 
@@ -28,7 +28,7 @@ export class Contact{
             contact.contact_id, 
             contact.name, 
             contact.emails, 
-            contact.telefones,
+            contact.phones,
             contact.role,
             contact.client_id
             );
@@ -38,6 +38,6 @@ export class Contact{
 export interface ContactInputDTO{
     name: string;
     emails: string;
-    telefones: string;
+    phones: string;
     role?: string;
 };

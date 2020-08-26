@@ -15,14 +15,14 @@ export class ContactController {
             const input: ContactInputDTO = {
                 name: req.body.name,
                 emails: req.body.emails,
-                telefones: req.body.telefones,
+                phones: req.body.phones,
                 role: req.body.role
             }
 
             const idGenerator = new IdGenerator();
             const id = idGenerator.generate();
 
-            await new ContactDatabase().createContact(id, input.name, input.emails, input.telefones, input.role as string, clientId)
+            await new ContactDatabase().createContact(id, input.name, input.emails, input.phones, input.role as string, clientId)
             
             res.status(200).send({ message: `${input.name} foi adicionado a sua Agenda` });
 

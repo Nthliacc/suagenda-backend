@@ -9,7 +9,7 @@ export class ClientDatabase extends BaseDatabase{
         client_id: string,
         name: string,
         emails: string,
-        telefones: string,
+        phones: string,
         create_at: string,
         role: string = "CLIENT"
     ): Promise<void>{
@@ -19,7 +19,7 @@ export class ClientDatabase extends BaseDatabase{
                     client_id, 
                     name, 
                     emails,
-                    telefones, 
+                    phones, 
                     create_at,
                     role 
                 })
