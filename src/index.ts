@@ -1,12 +1,13 @@
 import dotenv from "dotenv";
 import { AddressInfo } from "net";
 import express from "express";
+import cors from "cors";
 import { router } from "./router";
 
 dotenv.config();
 
 export const app = express();
-
+app.use(cors({ origin: true}));
 app.use(express.json());
 
 app.use("/client", router);
