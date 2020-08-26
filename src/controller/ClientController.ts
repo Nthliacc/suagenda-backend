@@ -72,7 +72,7 @@ export class ClientController {
                 phones: contact.phones
             }));
 
-            res.status(200).send( listContacts );
+            res.status(200).send({ listContacts });
             
         } catch (error) {
             res.status(400).send({ error: error.message });
