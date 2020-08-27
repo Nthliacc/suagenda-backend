@@ -4,8 +4,7 @@ import { BaseDatabase } from '../data/BaseDataba';
 import { IdGenerator } from '../services/idGenerator';
 import { ClientDatabase } from '../data/ClientDatabase';
 import { Authenticator } from '../services/Authenticator';
-import moment from 'moment'
-import { Contact } from '../model/Contact';
+import moment from 'moment';
 
 export class ClientController {
     async signup(req: Request, res: Response){
